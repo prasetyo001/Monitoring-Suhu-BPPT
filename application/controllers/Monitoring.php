@@ -32,17 +32,10 @@ class Monitoring extends CI_Controller
   }
   function post_data()
   {
-    
+
   }
 
 }
-
-
-
-
-
-
-
 
 
 

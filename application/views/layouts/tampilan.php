@@ -42,14 +42,14 @@
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
 
-                <a class="navbar-brand" href="index.html">Sistem Monitoring</a>
+                <a class="navbar-brand" href="<?= base_url('index.php') ?>">Sistem Monitoring</a>
             </div>
             <!-- /.navbar-header -->
 
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
 
-                    <a class="botton" href="<?= base_url('index.php/monitoring/cetak') ?>" style="border:solid 1px">Print History</a>
+                    <a class="botton" href="<?= base_url('index.php/monitoring/cetak') ?>" style="border:solid 1px">History</a>
                 </li>
             </ul>
 
