@@ -11,19 +11,19 @@
     <title>Monitoring Suhu</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="<?= base_url(); ?>asset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php base_url(); ?>asset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="<?= base_url(); ?>asset/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="<?php base_url(); ?>asset/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="<?= base_url(); ?>asset/dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="<?php base_url(); ?>asset/dist/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
-    <link href="<?= base_url(); ?>asset/vendor/morrisjs/morris.css" rel="stylesheet">
+    <link href="<?php base_url(); ?>asset/vendor/morrisjs/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="<?= base_url(); ?>asset/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="<?php base_url(); ?>asset/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,14 +42,14 @@
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
 
-                <a class="navbar-brand" href="<?= base_url('index.php') ?>">Sistem Monitoring</a>
+                <a class="navbar-brand" href="<?php base_url('index.php') ?>">Sistem Monitoring</a>
             </div>
             <!-- /.navbar-header -->
 
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
 
-                    <a class="botton" href="<?= base_url('index.php/monitoring/cetak') ?>" style="border:solid 1px">History</a>
+                    <a class="botton" href="<?php base_url('index.php/monitoring/cetak') ?>" style="border:solid 1px">History</a>
                 </li>
             </ul>
 
@@ -59,11 +59,11 @@
             <!-- /.row -->
 
 
-      <?= $template['body']; ?>
+      <?php $template['body']; ?>
 
 
 <!-- footer -->
-  <?= $template['partials']['footer']; ?>
+  <?php $template['partials']['footer']; ?>
 
 <!--end Container-->
 
@@ -77,21 +77,21 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="<?= base_url(); ?>asset/vendor/jquery/jquery.min.js"></script>
+    <script src="<?php base_url(); ?>asset/vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="<?= base_url(); ?>asset/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?php base_url(); ?>asset/vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="<?= base_url(); ?>asset/vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="<?php base_url(); ?>asset/vendor/metisMenu/metisMenu.min.js"></script>
 
     <!-- Morris Charts JavaScript -->
-    <script src="<?= base_url(); ?>asset/vendor/raphael/raphael.min.js"></script>
-    <script src="<?= base_url(); ?>asset/vendor/morrisjs/morris.min.js"></script>
-    <script src="<?= base_url(); ?>asset/data/morris-data.js"></script>
+    <script src="<?php base_url(); ?>asset/vendor/raphael/raphael.min.js"></script>
+    <script src="<?php base_url(); ?>asset/vendor/morrisjs/morris.min.js"></script>
+    <script src="<?php base_url(); ?>asset/data/morris-data.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="<?= base_url(); ?>asset/dist/js/sb-admin-2.js"></script>
+    <script src="<?php base_url(); ?>asset/dist/js/sb-admin-2.js"></script>
 
 </body>
 
