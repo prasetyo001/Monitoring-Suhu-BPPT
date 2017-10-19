@@ -11,19 +11,19 @@
     <title>Monitoring Suhu</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="<?php base_url(); ?>asset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>asset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="<?php base_url(); ?>asset/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>asset/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="<?php base_url(); ?>asset/dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>asset/dist/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
-    <link href="<?php base_url(); ?>asset/vendor/morrisjs/morris.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>asset/vendor/morrisjs/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="<?php base_url(); ?>asset/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url(); ?>asset/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,28 +42,28 @@
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
 
-                <a class="navbar-brand" href="<?php base_url('index.php') ?>">Sistem Monitoring</a>
+                <a class="navbar-brand" href="<?php echo base_url('index.php') ?>">Sistem Monitoring</a>
             </div>
             <!-- /.navbar-header -->
 
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
 
-                    <a class="botton" href="<?php base_url('index.php/monitoring/cetak') ?>" style="border:solid 1px">History</a>
+                    <a class="botton" href="<?php echo base_url('index.php/monitoring/cetak') ?>" style="border:solid 1px">History</a>
                 </li>
             </ul>
 
         </nav>
-<!-- DASBOARD -->
+<!-- Body -->
         <div id="page-wrapper" style="min-height: 349px; margin:0;">
             <!-- /.row -->
 
 
-      <?php $template['body']; ?>
+      <?php echo $template['body']; ?>
 
 
 <!-- footer -->
-  <?php $template['partials']['footer']; ?>
+      <?php echo $template['partials']['footer']; ?>
 
 <!--end Container-->
 

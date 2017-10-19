@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.2.7.1
--- http://www.phpmyadmin.net
+-- version 4.6.5.2
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 03, 2017 at 03:19 PM
--- Server version: 5.6.20
--- PHP Version: 5.5.15
+-- Generation Time: Oct 19, 2017 at 09:37 AM
+-- Server version: 10.1.21-MariaDB
+-- PHP Version: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,7 +14,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `monitoring_suhu`
@@ -26,71 +26,32 @@ SET time_zone = "+00:00";
 -- Table structure for table `room1`
 --
 
-CREATE TABLE IF NOT EXISTS `room1` (
-`id` int(100) NOT NULL,
+CREATE TABLE `room1` (
+  `id` int(100) NOT NULL,
+  `kd_room` char(5) NOT NULL,
   `suhu` varchar(100) NOT NULL,
   `kelembapan` varchar(100) NOT NULL,
   `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `room1`
 --
 
-INSERT INTO `room1` (`id`, `suhu`, `kelembapan`, `time`) VALUES
-(1, '10', '10', '2017-10-03 07:08:39');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `room2`
---
-
-CREATE TABLE IF NOT EXISTS `room2` (
-`id` int(100) NOT NULL,
-  `suhu` varchar(100) NOT NULL,
-  `kelembapan` varchar(100) NOT NULL,
-  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `room3`
---
-
-CREATE TABLE IF NOT EXISTS `room3` (
-`id` int(100) NOT NULL,
-  `suhu` varchar(100) NOT NULL,
-  `kelebapan` varchar(100) NOT NULL,
-  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `room4`
---
-
-CREATE TABLE IF NOT EXISTS `room4` (
-`id` int(100) NOT NULL,
-  `suhu` varchar(100) NOT NULL,
-  `kelembapan` varchar(100) NOT NULL,
-  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `room5`
---
-
-CREATE TABLE IF NOT EXISTS `room5` (
-`id` int(100) NOT NULL,
-  `suhu` varchar(100) NOT NULL,
-  `kelembapan` varchar(100) NOT NULL,
-  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+INSERT INTO `room1` (`id`, `kd_room`, `suhu`, `kelembapan`, `time`) VALUES
+(1, '2', '10', '10', '2017-10-19 06:59:32'),
+(2, '1', '23', '56', '2017-10-19 06:59:32'),
+(3, '3', '22', '57', '2017-10-19 06:59:33'),
+(4, '4', '20', '56', '2017-10-19 07:04:41'),
+(5, '5', '23', '56', '2017-10-19 07:04:41'),
+(6, '3', '21', '58', '2017-10-19 07:04:41'),
+(7, '1', '23', '59', '2017-10-19 07:04:41'),
+(8, '2', '21', '59', '2017-10-19 07:04:41'),
+(9, '5', '23', '55', '2017-10-19 07:04:41'),
+(10, '3', '24', '58', '2017-10-19 07:04:41'),
+(11, '2', '24', '60', '2017-10-19 07:04:41'),
+(12, '5', '23', '59', '2017-10-19 07:04:41'),
+(13, '2', '23', '67', '2017-10-19 07:04:41');
 
 --
 -- Indexes for dumped tables
@@ -100,31 +61,7 @@ CREATE TABLE IF NOT EXISTS `room5` (
 -- Indexes for table `room1`
 --
 ALTER TABLE `room1`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `room2`
---
-ALTER TABLE `room2`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `room3`
---
-ALTER TABLE `room3`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `room4`
---
-ALTER TABLE `room4`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `room5`
---
-ALTER TABLE `room5`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -134,27 +71,7 @@ ALTER TABLE `room5`
 -- AUTO_INCREMENT for table `room1`
 --
 ALTER TABLE `room1`
-MODIFY `id` int(100) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `room2`
---
-ALTER TABLE `room2`
-MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `room3`
---
-ALTER TABLE `room3`
-MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `room4`
---
-ALTER TABLE `room4`
-MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `room5`
---
-ALTER TABLE `room5`
-MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
