@@ -47,10 +47,10 @@
             <!-- /.navbar-header -->
 
             <ul class="nav navbar-top-links navbar-right">
-                <li class="dropdown">
 
-                    <a class="botton" href="<?php echo base_url('index.php/monitoring/cetak') ?>" style="border:solid 1px">History</a>
-                </li>
+
+                    <a class="btn btn-info  "href="<?php echo base_url('index.php/monitoring/cetak') ?>" style="">History</a>
+
             </ul>
 
         </nav>

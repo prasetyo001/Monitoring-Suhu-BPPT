@@ -43,8 +43,8 @@ class Monitoring extends CI_Controller
 
     $config['base_url'] = base_url().'index.php/monitoring/cetak';
     $config['total_rows'] = $jumlah_data;
-    $config['per_page'] = 10;
-    $config['full_tag_open'] = '<p  >';
+    $config['per_page'] = 5;
+    $config['full_tag_open'] = '<p>';
     $config['full_tag_close'] = '</p>';
 
     $from = $this->uri->segment(3);
