@@ -20,12 +20,12 @@
                         $no = 1;
                           foreach($suhu[$no] as $key => $a){
                       ?>
-                        <div class="huge"><?php echo $a->suhu ?><sup>o</sup></div>
+                        <div class="huge"><?php echo $a->suhu ?>&degc</div>
                       <?php } ?>
                     </div>
                 </div>
             </div>
-            <a href="#">
+            <a href="<?php echo base_url('index.php/monitoring/get_suhu1') ?>">
                 <div class="panel-footer">
                     <span class="pull-left">Suhu Room 1</span>
                     <span class="pull-right"></span>
@@ -46,13 +46,13 @@
                         $no = 2;
                           foreach($suhu[$no] as $key => $a){
                       ?>
-                        <div class="huge"><?php echo $a->suhu ?><sup>o</sup></div>
+                        <div class="huge"><?php echo $a->suhu ?>&degc</div>
                       <?php } ?>
 
                     </div>
                 </div>
             </div>
-            <a href="#">
+            <a href="<?php echo base_url('index.php/monitoring/get_suhu2') ?>">
                 <div class="panel-footer">
                     <span class="pull-left">Suhu Room 2</span>
                     <span class="pull-right"></i></span>
@@ -73,13 +73,13 @@
                         $no = 3;
                           foreach($suhu[$no] as $key => $a){
                       ?>
-                        <div class="huge"><?php echo $a->suhu ?><sup>o</sup></div>
+                        <div class="huge"><?php echo $a->suhu ?>&degc</div>
                       <?php } ?>
 
                     </div>
                 </div>
             </div>
-            <a href="#">
+            <a href="<?php echo base_url('index.php/monitoring/get_suhu3') ?>">
                 <div class="panel-footer">
                     <span class="pull-left"> Suhu Room 3</span>
                     <span class="pull-right"></i></span>
@@ -100,13 +100,13 @@
                         $no = 4;
                           foreach($suhu[$no] as $key => $a){
                       ?>
-                        <div class="huge"><?php echo $a->suhu ?><sup>o</sup></div>
+                        <div class="huge"><?php echo $a->suhu ?>&degc</div>
                       <?php } ?>
 
                     </div>
                 </div>
             </div>
-            <a href="#">
+            <a href="<?php echo base_url('index.php/monitoring/get_suhu4') ?>">
                 <div class="panel-footer">
                     <span class="pull-left">Suhu Room 4</span>
                     <span class="pull-right"></i></span>
@@ -127,13 +127,13 @@
                         $no = 5;
                           foreach($suhu[$no] as $key => $a){
                       ?>
-                        <div class="huge"><?php echo $a->suhu ?><sup>o</sup></div>
+                        <div class="huge"><?php echo $a->suhu ?>&degc</div>
                       <?php } ?>
 
                     </div>
                 </div>
             </div>
-            <a href="#">
+            <a href="<?php echo base_url('index.php/monitoring/get_suhu5') ?>">
                 <div class="panel-footer">
                     <span class="pull-left">Suhu Room 5</span>
                     <span class="pull-right"></i></span>
@@ -163,7 +163,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#">
+            <a href="<?php echo base_url('index.php/monitoring/get_suhu1') ?>">
                 <div class="panel-footer">
                     <span class="pull-left">Kelembaban Room 1</span>
                     <span class="pull-right"></span>
@@ -190,7 +190,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#">
+            <a href="<?php echo base_url('index.php/monitoring/get_suhu2') ?>">
                 <div class="panel-footer">
                     <span class="pull-left">Kelembaban Room 2</span>
                     <span class="pull-right"></span>
@@ -215,7 +215,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#">
+            <a href="<?php echo base_url('index.php/monitoring/get_suhu3') ?>">
                 <div class="panel-footer">
                     <span class="pull-left">Kelembaban Room 3</span>
                     <span class="pull-right"></span>
@@ -242,7 +242,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#">
+            <a href="<?php echo base_url('index.php/monitoring/get_suhu4') ?>">
                 <div class="panel-footer">
                     <span class="pull-left">Kelembaban Room 4</span>
                     <span class="pull-right"></span>
@@ -267,7 +267,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#">
+            <a href="<?php echo base_url('index.php/monitoring/get_suhu5') ?>">
                 <div class="panel-footer">
                     <span class="pull-left">Kelembaban Room 5</span>
                     <span class="pull-right"></span>
