@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="refresh" content="60">
-
-
 
     <title>Monitoring Suhu</title>
 
@@ -35,56 +32,30 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!--<script>
-        setTimeout(function() {
-            location.reload();
-        },60000);
-    </script>-->
-
 </head>
 
 <body>
-
     <div id="wrapper">
-
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
-
-                <a class="navbar-brand" href="<?php echo base_url('index.php') ?>">Sistem Monitoring</a>
+                    <a class="navbar-brand" href="<?php echo base_url('index.php') ?>">Sistem Monitoring</a>
             </div>
             <!-- /.navbar-header -->
-
             <ul class="nav navbar-top-links navbar-right">
-
-
                     <a class="navbar-brand  "href="<?php echo base_url('index.php/monitoring/cetak') ?>" style="">History</a>
-
             </ul>
-
         </nav>
 <!-- Body -->
-        <div id="page-wrapper" style="min-height: 349px; margin:0;">
+      <div id="page-wrapper" style="min-height: 349px; margin:0;">
             <!-- /.row -->
-
-
       <?php echo $template['body']; ?>
-
-
 <!-- footer -->
       <?php echo $template['partials']['footer']; ?>
-
 <!--end Container-->
-
   </div>
 </div>
 <div class="clearfix"></div>
-
-
-
-
-    <!-- /#wrapper -->
-
     <!-- jQuery -->
     <script src="<?php echo base_url(); ?>asset/vendor/jquery/jquery.min.js"></script>
 

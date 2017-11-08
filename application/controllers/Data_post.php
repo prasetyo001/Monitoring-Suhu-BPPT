@@ -7,7 +7,4 @@ class Data_post extends CI_Model {
     parent::__construct();
     $this->load->library('databade');
   }
-
 }
-/* End of file ${TM_FILENAME:${1/(.+)/l.php/}} */
-/* Location: ./${TM_FILEPATH/.+((?:application).+)//:application/models/${1/(.+)/l.php/}} */

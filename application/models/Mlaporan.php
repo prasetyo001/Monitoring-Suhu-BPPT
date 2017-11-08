@@ -9,7 +9,7 @@ class Mlaporan extends CI_Model {
     function getAllItem() {
         $this->db->from($this->tabel);
         $this->db->order_by('time','DESC');
-        $this->db->limit('5');
+        $this->db->limit('10');
         $query = $this->db->get();
         return $query->result();
     }

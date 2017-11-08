@@ -1,7 +1,7 @@
 <footer>
   <hr>
   <div class="pull-center" style="font-text:100px;">
-    <marquee> Monitoring Suhu - Powered BJIK @2017 </marquee>
+    <center> Monitoring Suhu dan Kelembaban - Powered BJIK @2017 </center>
   </div>
   <br/>
   <div class="clearfix"></div>

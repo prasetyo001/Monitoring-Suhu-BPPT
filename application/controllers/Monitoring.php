@@ -100,7 +100,7 @@ class Monitoring extends CI_Controller
   function updatedata(){
     $this->load->model('data_suhu');
 
-     $kd_room = $this->input->post('kd_room');
+    $kd_room = $this->input->post('kd_room');
  		$suhu = $this->input->post('suhu');
  		$kelembapan = $this->input->post('kelembapan');
 
