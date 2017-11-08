@@ -5,7 +5,7 @@ class Monitoring extends CI_Controller
     public function __construct()
     {
       parent::__construct();
-
+      date_default_timezone_set('Asia/Jakarta');
       $this->load->library('template');
       $this->template->title('tampilan');
 
@@ -56,7 +56,7 @@ class Monitoring extends CI_Controller
 
     $data['1']=$this->suhu_model->get_suhu_room('1');
 
-    $this->template->set_layout('tampilan')->build('/partials/suhu_room1',array('get_suhu_room' =>  $data));
+    $this->template->set_layout('tampilan')->build('/partials/room1',array('get_suhu_room' =>  $data));
   }
     function get_suhu2(){
     $this->load->helper(array('url'));
