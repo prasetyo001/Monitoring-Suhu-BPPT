@@ -28,10 +28,10 @@
 <table>
     <tr>
         <th style="width: 2%">No</th>
-        <th style="width: 20%">Time Stamp</th>
+        <th style="width: 20%">Time</th>
         <th>No Room Server</th>
         <th>Suhu</th>
-        <th>Kelembapan</th>
+        <th>Kelembaban</th>
 
     </tr>
     <?php $no=0; foreach($rsuhu as $d){
