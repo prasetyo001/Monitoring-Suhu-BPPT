@@ -31,6 +31,11 @@
                           </tr>
                          <?php } ?>
                     </tbody>
+
+                    <tr>
+
+                           <th colspan="4" align="center"> <a class="btn btn-info navbar-right" type="botton" style="position: relative; margin-right: 10px;" href="<?php echo base_url()?>index.php/claporanpdf/room2">Print</a></t>
+                    </tr>
                   </table>
 
             </div><!-- /.content-wrapper -->
