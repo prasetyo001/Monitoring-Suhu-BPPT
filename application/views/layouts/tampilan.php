@@ -1,3 +1,4 @@
+<?php date_default_timezone_set('Asia/Jakarta'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,8 +66,8 @@
     <!-- Metis Menu Plugin JavaScript -->
     <script src="<?php echo base_url(); ?>asset/vendor/metisMenu/metisMenu.min.js"></script>
 
-    <script src="<?php echo base_url() ?>asset/vendor/datatables/js/jquery.dataTables.min.js"></script>
-    <script src="<?php echo base_url() ?>asset/vendor/datatables/js/dataTables.bootstrap.min.js"></script>
+    <script src="<?php echo base_url(); ?>asset/vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="<?php echo base_url(); ?>asset/vendor/datatables/js/dataTables.bootstrap.min.js"></script>
 
     <!-- Morris Charts JavaScript -->
     <script src="<?php echo base_url(); ?>asset/vendor/raphael/raphael.min.js"></script>
