@@ -23,7 +23,7 @@
   </style>
 </head>
 <body>
-<p style="text-align: center">Tabel History Monitoring Suhu dan Kelembapan Server</p>
+<p style="text-align: center">Tabel History Monitoring Suhu dan Kelembapan Server BPPT</p>
 <br><br><br>
 <table>
     <tr>
@@ -42,8 +42,8 @@
         <?php $b = mysql_to_unix($d->time);  ?>
         <td><?php echo date('d-m-Y [H:i:s]' , $b ); ?></td>
         <td><?php echo $d->kd_room;?></td>
-        <td><?php echo $d->suhu;?></td>
-        <td><?php echo $d->kelembapan;?></td>
+        <td><?php echo $d->suhu;?> &deg;C</td>
+        <td><?php echo $d->kelembapan;?> %</td>
     </tr>
   <?php }?>
 </table>

@@ -25,7 +25,7 @@
                                 <?php $b = mysql_to_unix($u->time);  ?>
 			                          <td><?php echo date('d-m-Y [H:i:s]' , $b ); ?></td>
 			                          <td><?php echo $u->kd_room ?></td>
-			                          <td><?php echo $u->suhu ?>&degC</td>
+			                          <td><?php echo $u->suhu ?> &deg;C</td>
 			                          <td><?php echo $u->kelembapan ?>%</td>
 		                            </tr>
 	                       <?php } ?>

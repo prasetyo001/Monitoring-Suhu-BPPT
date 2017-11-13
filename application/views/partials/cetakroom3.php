@@ -41,7 +41,7 @@
         <td><?php echo $no;?></td>
         <?php $b = mysql_to_unix($d->time);  ?>
         <td><?php echo date('d-m-Y [H:i:s]' , $b ); ?></td>
-        <td><?php echo $d->suhu;?> C</td>
+        <td><?php echo $d->suhu;?> &deg;C</td>
         <td><?php echo $d->kelembapan;?> %</td>
     </tr>
   <?php }?>
