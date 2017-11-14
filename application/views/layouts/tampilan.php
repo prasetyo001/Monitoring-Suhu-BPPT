@@ -25,7 +25,11 @@
     <!-- Custom Fonts -->
     <link href="<?php echo base_url(); ?>asset/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <link href="<?php echo base_url() ?>asset/vendor/datatables-plugins/dataTables.bootstrap.css">
+    <link href="<?php echo base_url(); ?>asset/vendor/datatables-plugins/dataTables.bootstrap.css">
+
+    <!-- jQuery -->
+    <script href="<?php echo base_url();?>asset/jquery/jquery-1.3.2.min.js" rel="stylesheet" type="text/javascript" ></script>
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

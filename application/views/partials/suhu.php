@@ -9,7 +9,17 @@
 <!-- Room 1-->
 <div class="row">
     <div class="col-md-offset-1 col-lg-2  col-md-2">
-        <div class="panel panel-green">
+      <?php
+        $no = 1;
+          foreach($suhu[$no] as $key => $a){
+      ?>
+        <?php $s=25; $t=17; ?>
+        <?php if ($a->suhu >= $s or $a->suhu <= $t)
+                     {$c=("panel panel-red");}
+
+                else { $c = ("panel panel-green");} ?>
+        <div class="<?php echo $c ?>">
+        <?php } ?>
             <div class="panel-heading">
                 <div class="row">
                     <div class="col-xs-9">
@@ -20,7 +30,7 @@
                         $no = 1;
                           foreach($suhu[$no] as $key => $a){
                       ?>
-                        <div class="huge"><?php echo $a->suhu ?>&degc</div>
+                        <div class="huge"><?php echo $a->suhu ?>&deg;C</div>
                       <?php } ?>
                     </div>
                 </div>
@@ -37,7 +47,17 @@
 
   <!-- Room 2-->
     <div class="col-lg-2 col-md-2">
-        <div class="panel panel-green">
+      <?php
+        $no = 2;
+          foreach($suhu[$no] as $key => $a){
+      ?>
+        <?php $s=25; $t=17; ?>
+        <?php if ($a->suhu >= $s or $a->suhu <= $t)
+                   {$c=("panel panel-red");}
+
+                  else { $c = ("panel panel-green");} ?>
+        <div class="<?php echo $c ?>">
+        <?php } ?>
             <div class="panel-heading">
                 <div class="row">
 
@@ -46,7 +66,7 @@
                         $no = 2;
                           foreach($suhu[$no] as $key => $a){
                       ?>
-                        <div class="huge"><?php echo $a->suhu ?>&degc</div>
+                        <div class="huge"><?php echo $a->suhu ?>&deg;C</div>
                       <?php } ?>
 
                     </div>
@@ -64,7 +84,17 @@
 
   <!--Room 3-->
     <div class="col-lg-2 col-md-2">
-        <div class="panel panel-green">
+      <?php
+        $no = 3;
+          foreach($suhu[$no] as $key => $a){
+      ?>
+        <?php $s=25; $t=17; ?>
+        <?php if ($a->suhu >= $s or $a->suhu <= $t)
+                   {$c=("panel panel-red");}
+
+                  else { $c = ("panel panel-green");} ?>
+        <div class="<?php echo $c ?>">
+        <?php } ?>
             <div class="panel-heading">
                 <div class="row">
 
@@ -73,7 +103,7 @@
                         $no = 3;
                           foreach($suhu[$no] as $key => $a){
                       ?>
-                        <div class="huge"><?php echo $a->suhu ?>&degc</div>
+                        <div class="huge"><?php echo $a->suhu ?>&deg;C</div>
                       <?php } ?>
 
                     </div>
@@ -91,7 +121,17 @@
 
 <!--Room 4-->
     <div class="col-lg-2 col-md-2">
-        <div class="panel panel-green">
+      <?php
+        $no = 4;
+          foreach($suhu[$no] as $key => $a){
+      ?>
+        <?php $s=25; $t=17; ?>
+        <?php if ($a->suhu >= $s or $a->suhu <= $t)
+                   {$c=("panel panel-red");}
+
+                  else { $c = ("panel panel-green");} ?>
+        <div class="<?php echo $c ?>">
+        <?php } ?>
             <div class="panel-heading">
                 <div class="row">
 
@@ -100,7 +140,7 @@
                         $no = 4;
                           foreach($suhu[$no] as $key => $a){
                       ?>
-                        <div class="huge"><?php echo $a->suhu ?>&degc</div>
+                        <div class="huge"><?php echo $a->suhu ?>&deg;C</div>
                       <?php } ?>
 
                     </div>
@@ -118,7 +158,17 @@
 
   <!--Room 5-->
     <div class="col-lg-2 col-md-2">
-        <div class="panel panel-green">
+      <?php
+        $no = 5;
+          foreach($suhu[$no] as $key => $a){
+      ?>
+        <?php $s=25; $t=17; ?>
+        <?php if ($a->suhu >= $s or $a->suhu <= $t)
+                   {$c=("panel panel-red");}
+
+                  else { $c = ("panel panel-green");} ?>
+        <div class="<?php echo $c ?>">
+        <?php } ?>
             <div class="panel-heading">
                 <div class="row">
 
@@ -127,7 +177,7 @@
                         $no = 5;
                           foreach($suhu[$no] as $key => $a){
                       ?>
-                        <div class="huge"><?php echo $a->suhu ?>&degc</div>
+                        <div class="huge"><?php echo $a->suhu ?>&deg;C</div>
                       <?php } ?>
 
                     </div>
