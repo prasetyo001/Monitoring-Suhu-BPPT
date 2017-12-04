@@ -15,6 +15,23 @@ class Suhu_model extends CI_Model{
  	}
 
  	function rest_latestSuhu($id){
- 		return $this->db->where('kd_room',$id)->order_by('time','DESC')->get('room1','1')->result();
+ 		return $this->db->where('kd_room',$id)->order_by('time','DESC')->get('room1',1)->result();
  	}
+
+ 	function rest_warningSuhu($id){
+ 		$min = 18;
+ 		$max = 24;
+ 		$where = "suhu < '$min' OR suhu > '$max'";
+	 	$this->db->where($where);
+	 	$this->db->where('kd_room', $id);
+
+ 		return $this->db->order_by('time', 'DESC')->get('room1',1)->result();
+ 	}
+
+ 	function rest_delay($id){
+
+ 		$this->db->where('kd_room',$id);
+ 		return $this->db->get('delay')->result();
+ 	}
+
 }
