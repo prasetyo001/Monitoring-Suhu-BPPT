@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 	require(APPPATH.'libraries/REST_Controller.php');
 
@@ -31,7 +31,7 @@
             $this->load->database();
             $id = $this->get('id');
             $data = $this->suhu_model->rest_delay($id);
-            $this->response($data);
+            print "{".$data[0]->sendDelay."}";
         }
 	}
  ?>

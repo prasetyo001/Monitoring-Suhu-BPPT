@@ -98,12 +98,13 @@ class Monitoring extends CI_Controller
 
     $this->template->set_layout('tampilan')->build('/partials/room5',array('get_suhu_room' =>  $data));
   }
+
   function updatedata(){
     $this->load->model('data_suhu');
 
-    $kd_room = $this->input->post('kd_room');
- 		$suhu = $this->input->post('suhu');
- 		$kelembapan = $this->input->post('kelembapan');
+    $kd_room = $this->input->get('kd_room');
+ 		$suhu = $this->input->get('suhu');
+ 		$kelembapan = $this->input->get('kelembapan');
 
  		$data = array(
 
@@ -115,6 +116,27 @@ class Monitoring extends CI_Controller
  		$this->data_suhu->input_data($data,'room1');
      redirect('monitoring/index');
 
+   }
+
+   function addChatID(){
+      $this->load->model('chatbot_model');
+
+      $chatID = $this->input->post('chat_id');
+      
+      $data = array(
+        'chat_id' => $chatID
+      );
+
+      $cek = $this->chatbot_model->getChatID($chatID);
+
+      if($cek == FALSE){
+        $this->chatbot_model->input_data($data,'telegram');
+      }else{
+        print "data is exist";
+      }
+      
+
+      print "OK";
    }
 
 }
